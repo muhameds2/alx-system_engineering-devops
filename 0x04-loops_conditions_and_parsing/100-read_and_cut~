@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#displaying content of /etc/passwd in specific format
+while read -r passwd
+do
+echo "$passwd" | cut -d ":" -f1,3,6
+done < "/etc/passwd"
