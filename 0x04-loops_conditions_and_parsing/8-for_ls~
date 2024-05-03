@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+#displaying the content of a file in specific format
+dir_content=$(ls)
+temp=""
+for i in dir_content
+do
+    temp=$(echo $i | cut -d "-" -f 2)
+    echo "$temp"
+done
+

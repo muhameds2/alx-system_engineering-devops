@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#displaying the content of a file in specific format
+dir_content=$(ls)
+for i in $dir_content
+do
+    echo "$i" | cut -d "-" -f2
+done
