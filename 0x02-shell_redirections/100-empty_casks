@@ -1,0 +1,2 @@
+#!/bin/bash
+find . -type f,d \( -size 4k -o -size 0k \) -print
